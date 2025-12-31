@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://mingchuan.net/2025/11/07/%E7%AB%8B%E5%86%AC/</loc>
+    <loc>https://mingchuan.net/2025/12/22/hello-world/</loc>
     
     <lastmod>2025-12-27</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://mingchuan.net/2025/12/22/hello-world/</loc>
+    <loc>https://mingchuan.net/2025/11/07/%E7%AB%8B%E5%86%AC/</loc>
     
     <lastmod>2025-12-27</lastmod>
     
@@ -101,6 +101,27 @@
 
   
   <url>
+    <loc>https://mingchuan.net/tags/Hexo/</loc>
+    <lastmod>2025-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mingchuan.net/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2025-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mingchuan.net/tags/Post/</loc>
+    <lastmod>2025-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://mingchuan.net/tags/%E5%86%AC/</loc>
     <lastmod>2025-12-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -123,27 +144,6 @@
   
   <url>
     <loc>https://mingchuan.net/tags/%E5%9B%A2%E5%9C%86/</loc>
-    <lastmod>2025-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mingchuan.net/tags/Hexo/</loc>
-    <lastmod>2025-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mingchuan.net/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2025-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mingchuan.net/tags/Post/</loc>
     <lastmod>2025-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -187,14 +187,14 @@
 
   
   <url>
-    <loc>https://mingchuan.net/categories/%E6%84%9F%E6%82%9F/</loc>
+    <loc>https://mingchuan.net/categories/%E6%96%87%E7%AB%A0/</loc>
     <lastmod>2025-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://mingchuan.net/categories/%E6%96%87%E7%AB%A0/</loc>
+    <loc>https://mingchuan.net/categories/%E6%84%9F%E6%82%9F/</loc>
     <lastmod>2025-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
