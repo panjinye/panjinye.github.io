@@ -1,3 +1,5 @@
+https://mingchuan.net/2026/01/15/%E5%9D%9A%E6%9E%9C%E4%BA%91%20x%20Obsidian%20%E5%AE%98%E6%96%B9%E5%90%8C%E6%AD%A5%E6%8F%92%E4%BB%B6/
+https://mingchuan.net/links/index.html
 https://mingchuan.net/2026/01/05/%E6%B3%95%E5%BE%8B%E4%B9%8B%E8%B7%AF/
 https://mingchuan.net/about/index.html
 https://mingchuan.net/2025/12/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/
@@ -9,5 +11,10 @@ https://mingchuan.net/
 https://mingchuan.net/tags/Hexo/
 https://mingchuan.net/tags/%E5%8D%9A%E5%AE%A2/
 https://mingchuan.net/tags/Post/
+https://mingchuan.net/tags/Astro/
+https://mingchuan.net/tags/Obsidian/
+https://mingchuan.net/tags/%E5%9D%9A%E6%9E%9C%E4%BA%91/
+https://mingchuan.net/tags/%E7%BD%91%E7%AB%99/
 https://mingchuan.net/tags/%E6%B3%95%E5%BE%8B/
 https://mingchuan.net/categories/%E6%96%87%E7%AB%A0/
+https://mingchuan.net/categories/%E5%88%86%E4%BA%AB/

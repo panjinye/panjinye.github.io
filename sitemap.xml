@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mingchuan.net/2026/01/15/%E5%9D%9A%E6%9E%9C%E4%BA%91%20x%20Obsidian%20%E5%AE%98%E6%96%B9%E5%90%8C%E6%AD%A5%E6%8F%92%E4%BB%B6/</loc>
+    
+    <lastmod>2026-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mingchuan.net/links/index.html</loc>
+    
+    <lastmod>2026-01-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://mingchuan.net/2026/01/05/%E6%B3%95%E5%BE%8B%E4%B9%8B%E8%B7%AF/</loc>
     
     <lastmod>2026-01-05</lastmod>
@@ -67,7 +85,7 @@
 
   <url>
     <loc>https://mingchuan.net/</loc>
-    <lastmod>2026-01-05</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,28 +93,56 @@
   
   <url>
     <loc>https://mingchuan.net/tags/Hexo/</loc>
-    <lastmod>2026-01-05</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mingchuan.net/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2026-01-05</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mingchuan.net/tags/Post/</loc>
-    <lastmod>2026-01-05</lastmod>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mingchuan.net/tags/Astro/</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mingchuan.net/tags/Obsidian/</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mingchuan.net/tags/%E5%9D%9A%E6%9E%9C%E4%BA%91/</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mingchuan.net/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mingchuan.net/tags/%E6%B3%95%E5%BE%8B/</loc>
-    <lastmod>2026-01-05</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -105,7 +151,14 @@
   
   <url>
     <loc>https://mingchuan.net/categories/%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2026-01-05</lastmod>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mingchuan.net/categories/%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
