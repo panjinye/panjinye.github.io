@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/12/22/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>文章</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>博客</tag>
-        <tag>Post</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>坚果云 x Obsidian 官方同步插件</title>
     <url>/2026/01/15/%E5%9D%9A%E6%9E%9C%E4%BA%91%20x%20Obsidian%20%E5%AE%98%E6%96%B9%E5%90%8C%E6%AD%A5%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p>新的一年已经过去半个月了，好久没更新了，也是因为最近一直没有什么值得记录的。</p>
@@ -40,16 +14,61 @@
 <li>在插件设置里登录方式选择单点登录，会弹出坚果云窗口，注册登录就好了。</li>
 </ul>
 </blockquote>
-<p><img src="https://img.ficor.net/uploads/2026/01/6968847c865a5.webp" alt="点击登录"></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img.ficor.net/uploads/2026/01/6968847c865a5.webp"
+                      alt="点击登录"
+                ></p>
 <p>跳转登录成功后检查连接，显示连接成功，就搞定了！</p>
-<p><img src="https://img.ficor.net/uploads/2026/01/6968847c86615.webp" alt="检查链接"></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img.ficor.net/uploads/2026/01/6968847c86615.webp"
+                      alt="检查链接"
+                ></p>
 <p>可以设置目录，冲突标记，实时同步，自己设置就OK了。</p>
-<p><img src="https://img.ficor.net/uploads/2026/01/6968847c8996a.webp" alt="设置选项"></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img.ficor.net/uploads/2026/01/6968847c8996a.webp"
+                      alt="设置选项"
+                ></p>
 <p>第一次同步，PC端点击左侧同步按钮→确认同步，移动端点击编辑界面右下角“☰”→开始同步→确认同步。</p>
-<p><img src="https://img.ficor.net/uploads/2026/01/696886e26c133.webp" alt="PC端同步按钮"><br><img src="https://img.ficor.net/uploads/2026/01/6968a3b105e21.webp" alt="手机端同步按钮"><br><img src="https://img.ficor.net/uploads/2026/01/6968a3b10628a.webp" alt="手机端同步"><br><img src="https://img.ficor.net/uploads/2026/01/69688534291e5.webp" alt="同步确认"></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img.ficor.net/uploads/2026/01/696886e26c133.webp"
+                      alt="PC端同步按钮"
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img.ficor.net/uploads/2026/01/6968a3b105e21.webp"
+                      alt="手机端同步按钮"
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img.ficor.net/uploads/2026/01/6968a3b10628a.webp"
+                      alt="手机端同步"
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img.ficor.net/uploads/2026/01/69688534291e5.webp"
+                      alt="同步确认"
+                ></p>
 <p>箭头是PC端和手机端的同步按钮，每次写完自己同步，也可以点击按钮手动同步，还是很方便的。</p>
 <p>全部文章写完后，点完同步，再点击发布到Wordpress就好了。</p>
-<p><img src="https://img.ficor.net/uploads/2026/01/6968847c897bb.webp" alt="Wordpress登录"><br><img src="https://img.ficor.net/uploads/2026/01/6968847c89856.webp" alt="Wordpress设置"></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img.ficor.net/uploads/2026/01/6968847c897bb.webp"
+                      alt="Wordpress登录"
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img.ficor.net/uploads/2026/01/6968847c89856.webp"
+                      alt="Wordpress设置"
+                ></p>
 <p>这就是我现在写博客的全部流程，很好的打字体验，Obsidian支持Markdown，虽然我还不是很熟悉Markdown语言，但是打完之后生成的文件可以直接复制到静态博客里，也是很方便的。</p>
 <p>最近也一直在折腾静态博客，后面慢慢再记录和分享吧。上面的介绍大概已经躺在我Obsidian仓库里快一个月了。这里就当我水一篇吧，哈哈。谁还没有懒的时候。</p>
 ]]></content>
@@ -57,9 +76,9 @@
         <category>分享</category>
       </categories>
       <tags>
-        <tag>博客</tag>
         <tag>Astro</tag>
         <tag>Obsidian</tag>
+        <tag>博客</tag>
         <tag>坚果云</tag>
         <tag>网站</tag>
       </tags>
@@ -73,8 +92,8 @@
         <category>文章</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>博客</tag>
+        <tag>Hexo</tag>
         <tag>法律</tag>
       </tags>
   </entry>
@@ -90,8 +109,34 @@
         <category>文章</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>博客</tag>
+        <tag>Hexo</tag>
+        <tag>Post</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/12/22/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+]]></content>
+      <categories>
+        <category>文章</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>Hexo</tag>
         <tag>Post</tag>
       </tags>
   </entry>

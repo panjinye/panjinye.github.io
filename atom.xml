@@ -6,7 +6,7 @@
   <link href="https://mingchuan.net/atom.xml" rel="self"/>
   
   <link href="https://mingchuan.net/"/>
-  <updated>2026-01-15T08:39:26.389Z</updated>
+  <updated>2026-01-16T01:40:36.362Z</updated>
   <id>https://mingchuan.net/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://mingchuan.net/2026/01/15/%E5%9D%9A%E6%9E%9C%E4%BA%91%20x%20Obsidian%20%E5%AE%98%E6%96%B9%E5%90%8C%E6%AD%A5%E6%8F%92%E4%BB%B6/"/>
     <id>https://mingchuan.net/2026/01/15/%E5%9D%9A%E6%9E%9C%E4%BA%91%20x%20Obsidian%20%E5%AE%98%E6%96%B9%E5%90%8C%E6%AD%A5%E6%8F%92%E4%BB%B6/</id>
     <published>2026-01-15T07:50:18.000Z</published>
-    <updated>2026-01-15T08:39:26.389Z</updated>
+    <updated>2026-01-16T01:40:36.362Z</updated>
     
-    <content type="html"><![CDATA[<p>新的一年已经过去半个月了，好久没更新了，也是因为最近一直没有什么值得记录的。</p><p>最近一直在折腾手头的工具，也一直在准备写一篇”技术“类的文章，分享一下。只是一直没行动。</p><p>在使用了这么多笔记软件后，最终选择了用Obsidian来写博客。写完用插件直接同步网站，太方便了。也不用再专门在手机上下载App了。随时有想法或者想记录的内容，随时在手机上就可以记录加发布了。挺方便的，因为也不是随时都能有时间坐在电脑前，一本正经的打开网站编辑器，开始敲键盘。因为刚开始使用，好多功能和扩展都不熟悉，暂时只是敲字，后期优化还要在网站上继续。加入图片，链接之类的”锦上添花“的元素。</p><p>现阶段只有两个插件，一个Wordpress，还有一个同步的插件坚果云 x Obsidian 官方同步插件Nutstore Sync。反正免费版够用了。官方的同步还要花点钱，暂时需求也不大。这里给博友们安利一下这个插件，个人感觉还是很好用的，全平台实时同步，在哪里都可以摸起设备就继续。</p><blockquote><ul><li>打开 Obsidian，<code>设置</code> &gt; <code>第三方插件</code> &gt; <code>社区插件市场</code>。</li><li>搜索 **<code>Nutstore Sync</code>**，点击安装并启用。</li><li>在插件设置里登录方式选择单点登录，会弹出坚果云窗口，注册登录就好了。</li></ul></blockquote><p><img src="https://img.ficor.net/uploads/2026/01/6968847c865a5.webp" alt="点击登录"></p><p>跳转登录成功后检查连接，显示连接成功，就搞定了！</p><p><img src="https://img.ficor.net/uploads/2026/01/6968847c86615.webp" alt="检查链接"></p><p>可以设置目录，冲突标记，实时同步，自己设置就OK了。</p><p><img src="https://img.ficor.net/uploads/2026/01/6968847c8996a.webp" alt="设置选项"></p><p>第一次同步，PC端点击左侧同步按钮→确认同步，移动端点击编辑界面右下角“☰”→开始同步→确认同步。</p><p><img src="https://img.ficor.net/uploads/2026/01/696886e26c133.webp" alt="PC端同步按钮"><br><img src="https://img.ficor.net/uploads/2026/01/6968a3b105e21.webp" alt="手机端同步按钮"><br><img src="https://img.ficor.net/uploads/2026/01/6968a3b10628a.webp" alt="手机端同步"><br><img src="https://img.ficor.net/uploads/2026/01/69688534291e5.webp" alt="同步确认"></p><p>箭头是PC端和手机端的同步按钮，每次写完自己同步，也可以点击按钮手动同步，还是很方便的。</p><p>全部文章写完后，点完同步，再点击发布到Wordpress就好了。</p><p><img src="https://img.ficor.net/uploads/2026/01/6968847c897bb.webp" alt="Wordpress登录"><br><img src="https://img.ficor.net/uploads/2026/01/6968847c89856.webp" alt="Wordpress设置"></p><p>这就是我现在写博客的全部流程，很好的打字体验，Obsidian支持Markdown，虽然我还不是很熟悉Markdown语言，但是打完之后生成的文件可以直接复制到静态博客里，也是很方便的。</p><p>最近也一直在折腾静态博客，后面慢慢再记录和分享吧。上面的介绍大概已经躺在我Obsidian仓库里快一个月了。这里就当我水一篇吧，哈哈。谁还没有懒的时候。</p>]]></content>
+    <content type="html"><![CDATA[<p>新的一年已经过去半个月了，好久没更新了，也是因为最近一直没有什么值得记录的。</p><p>最近一直在折腾手头的工具，也一直在准备写一篇”技术“类的文章，分享一下。只是一直没行动。</p><p>在使用了这么多笔记软件后，最终选择了用Obsidian来写博客。写完用插件直接同步网站，太方便了。也不用再专门在手机上下载App了。随时有想法或者想记录的内容，随时在手机上就可以记录加发布了。挺方便的，因为也不是随时都能有时间坐在电脑前，一本正经的打开网站编辑器，开始敲键盘。因为刚开始使用，好多功能和扩展都不熟悉，暂时只是敲字，后期优化还要在网站上继续。加入图片，链接之类的”锦上添花“的元素。</p><p>现阶段只有两个插件，一个Wordpress，还有一个同步的插件坚果云 x Obsidian 官方同步插件Nutstore Sync。反正免费版够用了。官方的同步还要花点钱，暂时需求也不大。这里给博友们安利一下这个插件，个人感觉还是很好用的，全平台实时同步，在哪里都可以摸起设备就继续。</p><blockquote><ul><li>打开 Obsidian，<code>设置</code> &gt; <code>第三方插件</code> &gt; <code>社区插件市场</code>。</li><li>搜索 **<code>Nutstore Sync</code>**，点击安装并启用。</li><li>在插件设置里登录方式选择单点登录，会弹出坚果云窗口，注册登录就好了。</li></ul></blockquote><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://img.ficor.net/uploads/2026/01/6968847c865a5.webp"                      alt="点击登录"                ></p><p>跳转登录成功后检查连接，显示连接成功，就搞定了！</p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://img.ficor.net/uploads/2026/01/6968847c86615.webp"                      alt="检查链接"                ></p><p>可以设置目录，冲突标记，实时同步，自己设置就OK了。</p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://img.ficor.net/uploads/2026/01/6968847c8996a.webp"                      alt="设置选项"                ></p><p>第一次同步，PC端点击左侧同步按钮→确认同步，移动端点击编辑界面右下角“☰”→开始同步→确认同步。</p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://img.ficor.net/uploads/2026/01/696886e26c133.webp"                      alt="PC端同步按钮"                ><br><img                       lazyload                     src="/images/loading.svg"                     data-src="https://img.ficor.net/uploads/2026/01/6968a3b105e21.webp"                      alt="手机端同步按钮"                ><br><img                       lazyload                     src="/images/loading.svg"                     data-src="https://img.ficor.net/uploads/2026/01/6968a3b10628a.webp"                      alt="手机端同步"                ><br><img                       lazyload                     src="/images/loading.svg"                     data-src="https://img.ficor.net/uploads/2026/01/69688534291e5.webp"                      alt="同步确认"                ></p><p>箭头是PC端和手机端的同步按钮，每次写完自己同步，也可以点击按钮手动同步，还是很方便的。</p><p>全部文章写完后，点完同步，再点击发布到Wordpress就好了。</p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://img.ficor.net/uploads/2026/01/6968847c897bb.webp"                      alt="Wordpress登录"                ><br><img                       lazyload                     src="/images/loading.svg"                     data-src="https://img.ficor.net/uploads/2026/01/6968847c89856.webp"                      alt="Wordpress设置"                ></p><p>这就是我现在写博客的全部流程，很好的打字体验，Obsidian支持Markdown，虽然我还不是很熟悉Markdown语言，但是打完之后生成的文件可以直接复制到静态博客里，也是很方便的。</p><p>最近也一直在折腾静态博客，后面慢慢再记录和分享吧。上面的介绍大概已经躺在我Obsidian仓库里快一个月了。这里就当我水一篇吧，哈哈。谁还没有懒的时候。</p>]]></content>
     
     
       
@@ -38,11 +38,11 @@
     <category term="分享" scheme="https://mingchuan.net/categories/%E5%88%86%E4%BA%AB/"/>
     
     
-    <category term="博客" scheme="https://mingchuan.net/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
     <category term="Astro" scheme="https://mingchuan.net/tags/Astro/"/>
     
     <category term="Obsidian" scheme="https://mingchuan.net/tags/Obsidian/"/>
+    
+    <category term="博客" scheme="https://mingchuan.net/tags/%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="坚果云" scheme="https://mingchuan.net/tags/%E5%9D%9A%E6%9E%9C%E4%BA%91/"/>
     
@@ -70,9 +70,9 @@
     <category term="文章" scheme="https://mingchuan.net/categories/%E6%96%87%E7%AB%A0/"/>
     
     
-    <category term="Hexo" scheme="https://mingchuan.net/tags/Hexo/"/>
-    
     <category term="博客" scheme="https://mingchuan.net/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Hexo" scheme="https://mingchuan.net/tags/Hexo/"/>
     
     <category term="法律" scheme="https://mingchuan.net/tags/%E6%B3%95%E5%BE%8B/"/>
     
@@ -101,9 +101,9 @@
     <category term="文章" scheme="https://mingchuan.net/categories/%E6%96%87%E7%AB%A0/"/>
     
     
-    <category term="Hexo" scheme="https://mingchuan.net/tags/Hexo/"/>
-    
     <category term="博客" scheme="https://mingchuan.net/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Hexo" scheme="https://mingchuan.net/tags/Hexo/"/>
     
     <category term="Post" scheme="https://mingchuan.net/tags/Post/"/>
     
@@ -116,12 +116,12 @@
     <published>2025-12-22T02:07:21.000Z</published>
     <updated>2025-12-27T03:17:38.194Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div><p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div><p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div><p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div><p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;p&gt;Welcome to &lt;a class=&quot;link&quot;   href=&quot;https://hexo.io/&quot; &gt;Hexo&lt;i class=&quot;fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-</summary>
       
     
     
@@ -129,9 +129,9 @@
     <category term="文章" scheme="https://mingchuan.net/categories/%E6%96%87%E7%AB%A0/"/>
     
     
-    <category term="Hexo" scheme="https://mingchuan.net/tags/Hexo/"/>
-    
     <category term="博客" scheme="https://mingchuan.net/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Hexo" scheme="https://mingchuan.net/tags/Hexo/"/>
     
     <category term="Post" scheme="https://mingchuan.net/tags/Post/"/>
     
