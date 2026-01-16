@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2025/12/22/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+]]></content>
+      <categories>
+        <category>文章</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
+        <tag>Post</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>坚果云 x Obsidian 官方同步插件</title>
     <url>/2026/01/15/%E5%9D%9A%E6%9E%9C%E4%BA%91%20x%20Obsidian%20%E5%AE%98%E6%96%B9%E5%90%8C%E6%AD%A5%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p>新的一年已经过去半个月了，好久没更新了，也是因为最近一直没有什么值得记录的。</p>
@@ -76,25 +102,11 @@
         <category>分享</category>
       </categories>
       <tags>
+        <tag>博客</tag>
         <tag>Astro</tag>
         <tag>Obsidian</tag>
-        <tag>博客</tag>
         <tag>坚果云</tag>
         <tag>网站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>法律之路</title>
-    <url>/2026/01/05/%E6%B3%95%E5%BE%8B%E4%B9%8B%E8%B7%AF/</url>
-    <content><![CDATA[<p>最近几年，生意不好做，原本经营的小项目，逐渐支撑不下去了，中间夹杂着很多事情，需要用到法律相关的知识，随着自己的日常接触和自学，逐渐的喜欢上了这门透着刺激、好奇和实用的学问。<br>从2024年1月19日开始听第一节法律课，刑法学习的第一节课。到现在2年了，中间有很多麻烦事，一直不能安心的学习，自己也偷懒。所以参加了两次法考，成绩都不是很好。自己暗下决心一定要把法考过了。但是，这大脑的记性和年龄是成反比的，年龄越大，记性却越来越差。</p>
-]]></content>
-      <categories>
-        <category>文章</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>Hexo</tag>
-        <tag>法律</tag>
       </tags>
   </entry>
   <entry>
@@ -109,35 +121,23 @@
         <category>文章</category>
       </categories>
       <tags>
-        <tag>博客</tag>
         <tag>Hexo</tag>
+        <tag>博客</tag>
         <tag>Post</tag>
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/12/22/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+    <title>法律之路</title>
+    <url>/2026/01/05/%E6%B3%95%E5%BE%8B%E4%B9%8B%E8%B7%AF/</url>
+    <content><![CDATA[<p>最近几年，生意不好做，原本经营的小项目，逐渐支撑不下去了，中间夹杂着很多事情，需要用到法律相关的知识，随着自己的日常接触和自学，逐渐的喜欢上了这门透着刺激、好奇和实用的学问。<br>从2024年1月19日开始听第一节法律课，刑法学习的第一节课。到现在2年了，中间有很多麻烦事，一直不能安心的学习，自己也偷懒。所以参加了两次法考，成绩都不是很好。自己暗下决心一定要把法考过了。但是，这大脑的记性和年龄是成反比的，年龄越大，记性却越来越差。</p>
 ]]></content>
       <categories>
         <category>文章</category>
       </categories>
       <tags>
-        <tag>博客</tag>
         <tag>Hexo</tag>
-        <tag>Post</tag>
+        <tag>博客</tag>
+        <tag>法律</tag>
       </tags>
   </entry>
 </search>
