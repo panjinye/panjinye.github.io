@@ -7,7 +7,7 @@ import { defineCollection, z } from "astro:content";
  */
 const note = defineCollection({
 	// Load all markdown files except those starting with underscore (private/draft files)
-	loader: glob({ pattern: ["**/*.md", "!**/_*.md", "!**/_*/*.md"], base: "./src/content/note" }),
+	loader: glob({ pattern: ["**/*.md", "!**/_*.md", "!**/_*/*.md"], base: "./src/content/note" }), 
 	schema: z.object({
 		title: z.string(), // Post title (required)
 		timestamp: z.date(), // Publication date (required)
@@ -57,7 +57,7 @@ const preface = defineCollection({
  */
 const information = defineCollection({
 	// Load both markdown and YAML files for mixed content types
-	loader: glob({ pattern: "**/*.{md,mdx,yaml}", base: "./src/content/information" })
+	loader: glob({ pattern: ["zh-cn/**/*.{md,mdx,yaml}", "en/**/*.{md,mdx,yaml}"], base: "./src/content/information" })
 });
 
 /**
