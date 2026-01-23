@@ -184,7 +184,7 @@ export const plugin: Plugin<undefined[], Root> = () => {
 
 		parent.children = [...beforeChildren, spoilerNode, ...afterChildren];
 
-		return index; // Re-visit the same node and children
+		return index + 1; // Move to next node to avoid infinite loop
 	};
 
 	const transformer: Transformer<Root> = tree => {

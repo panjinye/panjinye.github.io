@@ -21,17 +21,13 @@ const WRAPPER_REGEX_START = /^\{\s*((?:[^{}]|(["']).*?\2)*)\}/;
 const WRAPPER_REGEX_END = /\s*\{\s*((?:[^{}]|(["']).*?\2)*)\}\s*$/;
 
 /**
- * Regex to parse individual attributes within the wrapper.
+ * Regex pattern to parse individual attributes within the wrapper.
  *
  * Supports:
  * - ID: `#id`
  * - Class: `.class`
  * - Key-Value: `key="value"`, `key='value'`, `key=value`
- *
- * @see https://regex-vis.com/?r=%2F%28%3F%3A%23%28%3F%3Cid%3E%5B%5E%23%5Cs.%7D%5D%2B%29%29%7C%28%3F%3A%5C.%28%3F%3Cclass%3E%5B%5E%23%5Cs.%7D%5D%2B%29%29%7C%28%3F%3Ckey%3E%5Ba-zA-Z0-9_-%5D%2B%29%28%3F%3A%3D%28%3F%3A%28%3F%3Cquote%3E%5B%27%22%5D%29%28%3F%3Cqvalue%3E.*%3F%29%5Ck%3Cquote%3E%7C%28%3F%3Cvalue%3E%5B%5E%23%5Cs.%7D%5D%2B%29%29%29%3F%2Fg
  */
-const ATTRS_REGEX =
-	/(?:#(?<id>[^#\s.}]+))|(?:\.(?<class>[^#\s.}]+))|(?<key>[a-zA-Z0-9_-]+)(?:=(?:(?<quote>['"])(?<qvalue>.*?)\k<quote>|(?<value>[^#\s.}]+)))?/g;
 
 /**
  * Helper to parse an attribute string into a key-value object.
@@ -40,13 +36,13 @@ const ATTRS_REGEX =
  * @returns A record of parsed attributes.
  */
 const parseAttributes = (content: string): Record<string, string> => {
-	// Reset index to ensure fresh matching
-	ATTRS_REGEX.lastIndex = 0;
-
 	const attributes: Record<string, string> = {};
 
+	// Create a new regex instance for each call to avoid state issues
+	const regex = /(?:#(?<id>[^#\s.}]+))|(?:\.(?<class>[^#\s.}]+))|(?<key>[a-zA-Z0-9_-]+)(?:=(?:(?<quote>[\'"])(?<qvalue>.*?)\k<quote>|(?<value>[^#\s.}]+)))?/g;
+
 	let match: RegExpExecArray | null;
-	while ((match = ATTRS_REGEX.exec(content)) !== null) {
+	while ((match = regex.exec(content)) !== null) {
 		const { id, class: className, key, qvalue, value } = match.groups || {};
 
 		if (id) {

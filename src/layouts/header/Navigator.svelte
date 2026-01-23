@@ -82,7 +82,7 @@ onMount(() => {
 	<footer class="flex flex-col gap-2 sm:flex-row sm:gap-7">
 		<ThemeSwitcher />
 
-		<a href={getRelativeLocaleUrl(locale, "/feed.xml")} target="_blank" aria-label="Subscription" class="inline-flex"><Icon name="lucide--rss" /></a>
+		<a href={getRelativeLocaleUrl(locale, "/circle")} aria-label="Friend Circle" class="inline-flex"><Icon name="lucide--users" /></a>
 
 		{#if !monolocale}
 			<Menu label="Language switcher">

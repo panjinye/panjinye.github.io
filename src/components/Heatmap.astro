@@ -3,7 +3,7 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 import { Temporal } from "temporal-polyfill";
 import config, { monolocale } from "$config";
 import type { Section } from "$utils/config";
-import Time from "$utils/time";
+import { getZonedDateTime } from "$utils/time";
 import i18nit from "$i18n";
 
 /**
@@ -37,14 +37,14 @@ const cells: { target: string; contents: typeof contents }[] = [];
 
 // Determine heatmap frequency (default: day)
 const frequency = config.heatmap?.unit || "day";
-const now = Time().toPlainDate();
+const now = getZonedDateTime().toPlainDate();
 
 // Normalize notes and add to contents list
 notes.forEach(note => {
 	contents.push({
 		section: "note",
 		title: note.data.title,
-		date: Time(note.data.timestamp.toISOString()).toPlainDate(),
+		date: getZonedDateTime(note.data.timestamp.toISOString()).toPlainDate(),
 		link: getRelativeLocaleUrl(locale, `/note/${monolocale ? note.id : note.id.split("/").slice(1).join("/")}`)
 	});
 });
@@ -54,7 +54,7 @@ jottings.forEach(jotting => {
 	contents.push({
 		section: "jotting",
 		title: jotting.data.title,
-		date: Time(jotting.data.timestamp.toISOString()).toPlainDate(),
+		date: getZonedDateTime(jotting.data.timestamp.toISOString()).toPlainDate(),
 		link: getRelativeLocaleUrl(locale, `/jotting/${monolocale ? jotting.id : jotting.id.split("/").slice(1).join("/")}`)
 	});
 });

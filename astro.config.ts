@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig, fontProviders } from "astro/config";
+import { defineConfig } from "astro/config";
 import yaml from "@rollup/plugin-yaml";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
@@ -103,8 +103,7 @@ export default defineConfig({
 		}
 	},
 	vite: {
-		// @ts-expect-error
-		plugins: [yaml(), tailwindcss()]
+		plugins: [yaml() as any, tailwindcss()]
 	},
 	integrations: [
 		svelte(),

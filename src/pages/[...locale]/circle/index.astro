@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import config, { monolocale } from "$config";
+import Base from "$layouts/Base.astro";
+import FriendCircle from "$components/FriendCircle.svelte";
+import i18nit from "$i18n";
+
+export async function getStaticPaths() {
+	return config.i18n.locales.map(locale => ({
+		params: { locale: config.i18n.defaultLocale === locale ? undefined : locale }
+	}));
+}
+
+const { locale = config.i18n.defaultLocale } = Astro.params;
+const t = i18nit(locale);
+---
+
+<Base title={t("navigation.friendCircle")} {locale}>
+	<main class="friend-circle-page">
+		<FriendCircle {locale} client:load />
+	</main>
+</Base>
+
+<style>
+	.friend-circle-page {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+</style>

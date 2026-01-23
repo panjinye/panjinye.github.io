@@ -1,7 +1,7 @@
 <script lang="ts">
 interface Props {
 	/** Icon name/identifier (required) - corresponds to icon file or icon set key */
-	name: `${string}--${string}`;
+	name: string;
 
 	/** Icon size in pixels or CSS units (optional) - controls width/height */
 	size?: number | string;

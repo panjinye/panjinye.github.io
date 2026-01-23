@@ -21,11 +21,11 @@ const copy: (options: { duration: number }) => ShikiTransformer = ({ duration })
 			tagName: "button",
 			properties: {
 				type: "button",
-				data: this.source, // Store the source code in data attribute
+				"data-code": this.source, // Store the source code in data attribute
 				class: "code-copy-button",
 				"aria-hidden": true,
 				// Inline click handler: copies code to clipboard and shows visual feedback
-				onclick: `navigator.clipboard.writeText(this.attributes.data.value);this.classList.add("code-copied");window.setTimeout(() => this.classList.remove("code-copied"), ${duration})`
+				onclick: `navigator.clipboard.writeText(this.getAttribute("data-code"));this.classList.add("code-copied");setTimeout(() => this.classList.remove("code-copied"), ${duration})`
 			},
 			children: [
 				// Copy icon (clipboard icon) - shown by default

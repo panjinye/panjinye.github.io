@@ -24,8 +24,19 @@ jotting:
   empty: 暂无随笔
   tag: 标签
 language: 简体中文
+friendCircle:
+  empty: 暂无好友动态
+  loading: 正在加载好友动态...
+  noFeed: 该站点暂无订阅内容
+  refresh: 刷新
+  retry: 重试
+  stats: 已获取 {total} 个好友动态
+  subtitle: 查看友链站点的最新更新
+  title: 朋友圈
+  visit: 访问站点
 navigation:
   about: 絮述
+  friendCircle: 朋友圈
   home: 序章
   instruction: 指南
   jotting: 随笔

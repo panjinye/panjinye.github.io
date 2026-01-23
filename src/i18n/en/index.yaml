@@ -28,8 +28,19 @@ jotting:
   empty: No jottings available
   tag: Tag
 language: English
+friendCircle:
+  empty: No friend updates available
+  loading: Loading friend updates...
+  noFeed: This site has no subscription content
+  refresh: Refresh
+  retry: Retry
+  stats: Retrieved {total} friend updates
+  subtitle: See the latest updates from friend sites
+  title: Friend Circle
+  visit: Visit Site
 navigation:
   about: About
+  friendCircle: Friend Circle
   home: Home
   instruction: Instruction
   jotting: Jotting
