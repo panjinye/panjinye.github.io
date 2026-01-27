@@ -32,12 +32,12 @@ export const GET: APIRoute = async ({ request }) => {
 	}
 
 	// 限制并发请求数量，避免过多请求导致的性能问题
-	const MAX_CONCURRENT_REQUESTS = 10;
+	const maxConcurrentRequests = 10;
 	const feedResults = [];
 
 	// 分批次处理友链
-	for (let i = 0; i < links.length; i += MAX_CONCURRENT_REQUESTS) {
-		const batch = links.slice(i, i + MAX_CONCURRENT_REQUESTS);
+	for (let i = 0; i < links.length; i += maxConcurrentRequests) {
+		const batch = links.slice(i, i + maxConcurrentRequests);
 		const batchPromises = batch.map(async (link) => {
 			// 生成缓存键
 			const cacheKey = `${link.url}_${link.feed || 'default'}`;
@@ -157,7 +157,7 @@ function parseRSS(xml: string, site: FriendLink) {
 		// 使用正则表达式解析 RSS，避免使用 DOMParser（浏览器 API）
 		// 匹配所有的 entry 或 item 元素
 		const entryRegex = /<(entry|item)[^>]*>([\s\S]*?)<\/(entry|item)>/gi;
-		let match;
+		let match: RegExpExecArray | null;
 
 		while ((match = entryRegex.exec(xml)) !== null) {
 			const entryContent = match[2];

@@ -1,7 +1,6 @@
 <script lang="ts">
 import { onMount } from "svelte";
 import { fade, fly } from "svelte/transition";
-import { getRelativeLocaleUrl } from "astro:i18n";
 import i18nit from "$i18n";
 import Icon from "$components/Icon.svelte";
 
@@ -86,13 +85,13 @@ async function fetchFriendCircle() {
 		let rawSites = data.sites || [];
 		
 		// 处理每个站点：只保留最新的三篇文章，并按发布时间排序
-		const processedSites = rawSites.map(site => {
+		const processedSites = rawSites.map((site: SiteData) => {
 			if (!site.items || site.items.length === 0) {
 				return null;
 			}
 			
 			// 按发布时间排序，只保留最新的3篇
-			const sortedItems = [...site.items].sort((a, b) => {
+			const sortedItems = [...site.items].sort((a: FeedItem, b: FeedItem) => {
 				const dateA = new Date(a.pubDate).getTime() || 0;
 				const dateB = new Date(b.pubDate).getTime() || 0;
 				return dateB - dateA;
@@ -102,10 +101,10 @@ async function fetchFriendCircle() {
 				...site,
 				items: sortedItems
 			};
-		}).filter((site): site is SiteData => site !== null); // 过滤掉没有文章的站点
+		}).filter((site: any): site is SiteData => site !== null); // 过滤掉没有文章的站点
 		
 		// 按每个站点最新文章的发布时间对站点进行排序
-		processedSites.sort((a, b) => {
+		processedSites.sort((a: SiteData, b: SiteData) => {
 			const dateA = new Date(a.items[0]?.pubDate).getTime() || 0;
 			const dateB = new Date(b.items[0]?.pubDate).getTime() || 0;
 			return dateB - dateA;
@@ -113,8 +112,8 @@ async function fetchFriendCircle() {
 		
 		// 合并所有文章，用于统计总数
 		const mergedItems: FeedItem[] = [];
-		processedSites.forEach(site => {
-			site.items.forEach(item => {
+		processedSites.forEach((site: SiteData) => {
+			site.items.forEach((item: FeedItem) => {
 				mergedItems.push({
 					...item,
 					site: site.site
@@ -193,7 +192,7 @@ onMount(() => {
 					{#each sites as site (site.site.url)} 
 						<section class="site-section" in:fly={{ y: 20, duration: 300 }}>
 							<div class="site-header">
-								<img src={site.site.image} alt={site.site.title} class="site-avatar" loading="lazy" onerror={(e) => { e.currentTarget.src = "/linkback.webp"; }} />
+								<img src={site.site.image} alt={site.site.title} class="site-avatar" loading="lazy" onerror={(e) => { (e.currentTarget as HTMLImageElement).src = "/linkback.webp"; }} />
 								<div class="site-info">
 									<h2 class="site-title">
 										<a href={site.site.url} target="_blank" rel="noopener noreferrer">{site.site.title}</a>
@@ -207,10 +206,10 @@ onMount(() => {
 					{#each site.items as item (item.link)} 
 						<article class="site-item" class:visited={visitedLinks.has(item.link)}>
 							<h3 class="item-title">
-								<a href={item.link} target="_blank" rel="noopener noreferrer" onclick={(e) => {
-									markAsVisited(item.link);
-								}}>{item.title}</a>
-							</h3>
+							<a href={item.link} target="_blank" rel="noopener noreferrer" onclick={() => {
+								markAsVisited(item.link);
+							}}>{item.title}</a>
+						</h3>
 							<time class="item-pub-date">
 								{formatDate(item.pubDate)}
 							</time>
@@ -383,13 +382,7 @@ onMount(() => {
 		flex-shrink: 0;
 	}
 
-	.site-meta {
-		display: flex;
-		flex-direction: column;
-		gap: 0.25rem;
-		font-size: 0.875rem;
-		color: var(--secondary-color);
-	}
+
 
 	.site-title {
 		margin: 0;
@@ -497,38 +490,5 @@ onMount(() => {
 		min-height: 60px;
 	}
 
-	.item-description {
-		margin: 0;
-		font-size: 0.875rem;
-		color: var(--secondary-color);
-		line-height: 1.6;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		display: -webkit-box;
-		-webkit-line-clamp: 2;
-		-webkit-box-orient: vertical;
-	}
 
-	.site-footer {
-		margin-top: auto;
-		padding-top: 1rem;
-		border-top: 1px solid var(--weak-color);
-	}
-
-	.visit-site {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.5rem;
-		padding: 0.5rem 1rem;
-		background: var(--primary-color);
-		color: var(--background-color);
-		text-decoration: none;
-		border-radius: 6px;
-		font-size: 0.875rem;
-		transition: opacity 0.2s;
-	}
-
-	.visit-site:hover {
-		opacity: 0.9;
-	}
 </style>
