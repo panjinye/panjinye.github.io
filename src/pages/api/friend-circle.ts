@@ -18,6 +18,7 @@ export const GET: APIRoute = async ({ request }) => {
 	// 从请求头或查询参数中获取语言，默认使用 zh-cn
 	const url = new URL(request.url);
 	const locale = url.searchParams.get('locale') || "zh-cn";
+	const refresh = url.searchParams.get('refresh') === 'true'; // 检查是否需要强制刷新
 
 	// 尝试加载指定语言的链接列表，如果失败则回退到 zh-cn
 	let links: FriendLink[] = [];
@@ -42,8 +43,8 @@ export const GET: APIRoute = async ({ request }) => {
 			const cacheKey = `${link.url}_${link.feed || 'default'}`;
 			const now = Date.now();
 
-			// 检查缓存是否有效
-			if (rssCache.has(cacheKey)) {
+			// 检查缓存是否有效，如果需要强制刷新则忽略缓存
+			if (!refresh && rssCache.has(cacheKey)) {
 				const cached = rssCache.get(cacheKey);
 				if (cached && now - cached.timestamp < CACHE_DURATION) {
 					return cached.data;
@@ -126,6 +127,11 @@ export const GET: APIRoute = async ({ request }) => {
 
 	const successfulSites = feedResults.filter((r) => r.items.length > 0);
 
+	// 根据是否强制刷新设置不同的缓存策略
+	const cacheControl = refresh 
+		? "no-store, must-revalidate" // 强制刷新时不缓存
+		: "public, max-age=600"; // 否则缓存10分钟
+
 	return new Response(JSON.stringify({
 		total: links.length,
 		fetched: feedResults.length,
@@ -134,7 +140,7 @@ export const GET: APIRoute = async ({ request }) => {
 	}), {
 		headers: {
 			"Content-Type": "application/json",
-			"Cache-Control": "public, max-age=600" // 允许浏览器缓存10分钟
+			"Cache-Control": cacheControl
 		}
 	});
 };

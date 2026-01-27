@@ -34,16 +34,47 @@ let loading = $state(true);
 let sites = $state<SiteData[]>([]);
 let allItems = $state<FeedItem[]>([]);
 let error = $state<string | null>(null);
+let visitedLinks = $state<Set<string>>(new Set());
+
+// 从localStorage加载已访问链接
+function loadVisitedLinks() {
+	try {
+		const saved = localStorage.getItem("visitedFriendLinks");
+		if (saved) {
+			visitedLinks = new Set(JSON.parse(saved));
+		}
+	} catch (err) {
+		console.error("Failed to load visited links:", err);
+	}
+}
+
+// 保存已访问链接到localStorage
+function saveVisitedLinks() {
+	try {
+		localStorage.setItem("visitedFriendLinks", JSON.stringify([...visitedLinks]));
+	} catch (err) {
+		console.error("Failed to save visited links:", err);
+	}
+}
+
+// 标记链接为已访问
+function markAsVisited(link: string) {
+	// 直接修改集合，触发响应式更新
+	visitedLinks.add(link);
+	saveVisitedLinks();
+	// 强制刷新状态，确保UI更新
+	visitedLinks = new Set(visitedLinks);
+}
 
 async function fetchFriendCircle() {
 	try {
 		loading = true;
 		error = null;
 		
-		// 添加缓存控制头，允许浏览器使用缓存
-		const response = await fetch("/api/friend-circle", {
+		// 发起请求，强制刷新数据
+		const response = await fetch(`/api/friend-circle?refresh=true&locale=${locale}`, {
 			headers: {
-				"Cache-Control": "no-cache" // 强制重新验证缓存
+				"Cache-Control": "no-store, must-revalidate" // 确保不使用任何缓存
 			}
 		});
 		
@@ -119,12 +150,13 @@ function formatDate(dateStr: string): string {
 }
 
 onMount(() => {
+		loadVisitedLinks();
 		fetchFriendCircle();
 		
-		// 设置定时自动刷新，每6小时刷新一次
+		// 设置定时自动刷新，每1小时刷新一次
 		const intervalId = setInterval(() => {
 			fetchFriendCircle();
-		}, 6 * 60 * 60 * 1000);
+		}, 1 * 60 * 60 * 1000);
 		
 		// 组件销毁时清除定时器
 		return () => clearInterval(intervalId);
@@ -146,54 +178,73 @@ onMount(() => {
 			</button>
 		</div>
 	{:else}
-		<div class="stats">
-			<span>{t("friendCircle.stats", { total: sites.length })}</span>
-			<div class="stats-right">
-				<span class="item-count">共 {allItems.length} 篇文章</span>
-				<button onclick={fetchFriendCircle} class="refresh-btn" title={t("friendCircle.refresh")}>
-					<Icon name="lucide--refresh-cw" />
-				</button>
+		<div class="container">
+			<div class="stats">
+				<span>{t("friendCircle.stats", { total: sites.length })}</span>
+				<div class="stats-right">
+					<span class="item-count">共 {allItems.length} 篇文章</span>
+					<button onclick={fetchFriendCircle} class="refresh-btn" title={t("friendCircle.refresh")}>
+						<Icon name="lucide--refresh-cw" />
+					</button>
+				</div>
 			</div>
-		</div>
-		{#if sites.length > 0}
-			<div class="feed-sites">
-				{#each sites as site (site.site.url)} 
-					<section class="site-section" in:fly={{ y: 20, duration: 300 }}>
-						<div class="site-header">
-							<img src={site.site.image} alt={site.site.title} class="site-avatar" loading="lazy" onerror={(e) => { e.currentTarget.src = "/linkback.webp"; }} />
-							<div class="site-info">
-								<h2 class="site-title">
-									<a href={site.site.url} target="_blank" rel="noopener noreferrer">{site.site.title}</a>
-								</h2>
-								<time class="site-last-update">
-									{formatDate(site.items[0]?.pubDate)}
-								</time>
+			{#if sites.length > 0}
+				<div class="feed-sites">
+					{#each sites as site (site.site.url)} 
+						<section class="site-section" in:fly={{ y: 20, duration: 300 }}>
+							<div class="site-header">
+								<img src={site.site.image} alt={site.site.title} class="site-avatar" loading="lazy" onerror={(e) => { e.currentTarget.src = "/linkback.webp"; }} />
+								<div class="site-info">
+									<h2 class="site-title">
+										<a href={site.site.url} target="_blank" rel="noopener noreferrer">{site.site.title}</a>
+									</h2>
+									<a href={site.site.url} class="site-url" target="_blank" rel="noopener noreferrer">
+										{site.site.url}
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="site-items">
-							{#each site.items as item (item.link)} 
-								<article class="site-item">
-									<h3 class="item-title">
-										<a href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a>
-									</h3>
-								</article>
-							{/each}
-						</div>
+							<div class="site-items">
+					{#each site.items as item (item.link)} 
+						<article class="site-item" class:visited={visitedLinks.has(item.link)}>
+							<h3 class="item-title">
+								<a href={item.link} target="_blank" rel="noopener noreferrer" onclick={(e) => {
+									markAsVisited(item.link);
+								}}>{item.title}</a>
+							</h3>
+							<time class="item-pub-date">
+								{formatDate(item.pubDate)}
+							</time>
+						</article>
+					{/each}
+					</div>
 					</section>
 				{/each}
 			</div>
-		{:else}
-			<div class="empty" in:fade>
-				<Icon name="lucide--users" />
-				<p>{t("friendCircle.empty")}</p>
-			</div>
+			{:else}
+				<div class="empty" in:fade>
+					<Icon name="lucide--users" />
+					<p>{t("friendCircle.empty")}</p>
+				</div>
 		{/if}
+		</div>
 	{/if}
 </div>
 
 <style>
 	.friend-circle {
 		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.container {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.stats {
+		margin-bottom: 1.5rem;
 	}
 
 	.loading, .error, .empty {
@@ -286,8 +337,14 @@ onMount(() => {
 
 	.feed-sites {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(2, minmax(200px, 1fr));
 		gap: 1.5rem;
+	}
+
+	@media (max-width: 768px) {
+		.feed-sites {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	.site-section {
@@ -336,7 +393,7 @@ onMount(() => {
 
 	.site-title {
 		margin: 0;
-		font-size: 1rem;
+		font-size: 1.125rem;
 		font-weight: 600;
 		color: var(--text-color);
 	}
@@ -351,25 +408,32 @@ onMount(() => {
 		color: var(--primary-color);
 	}
 
-	.site-last-update {
+	.site-url {
 		font-size: 0.75rem;
 		color: var(--secondary-color);
+		text-decoration: none;
+		transition: color 0.2s;
+	}
+
+	.site-url:hover {
+		color: var(--primary-color);
 	}
 
 	.site-items {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
+		gap: 0.25rem;
 		margin-bottom: 0;
 	}
 
 	.site-item {
-		padding: 0.75rem;
+		padding: 0.5rem;
 		background: var(--background-color);
 		border-radius: 6px;
 		border: 1px solid var(--weak-color);
 		transition: all 0.2s;
+		position: relative;
 	}
 
 	.site-item:hover {
@@ -377,11 +441,30 @@ onMount(() => {
 		transform: translateY(-2px);
 	}
 
+	.site-item::after {
+		content: '';
+		position: absolute;
+		right: 0.5rem;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background-color: #4ade80;
+		transition: background-color 0.2s;
+	}
+
+	.site-item.visited::after {
+		background-color: var(--secondary-color);
+	}
+
 	.item-title {
 		margin: 0;
-		font-size: 0.875rem;
+		font-size: 1.25rem;
 		font-weight: 500;
 		line-height: 1.3;
+		padding-right: 1rem;
+		margin-bottom: 0.25rem;
 	}
 
 	.item-title a {
@@ -398,7 +481,20 @@ onMount(() => {
 		display: block;
 		font-size: 0.75rem;
 		color: var(--secondary-color);
-		margin-bottom: 0.5rem;
+		margin-top: 0.5rem;
+	}
+
+	.site-item {
+		padding: 0.5rem;
+		background: var(--background-color);
+		border-radius: 6px;
+		border: 1px solid var(--weak-color);
+		transition: all 0.2s;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 60px;
 	}
 
 	.item-description {
