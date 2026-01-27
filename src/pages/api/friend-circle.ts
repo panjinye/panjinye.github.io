@@ -130,11 +130,12 @@ export const GET: APIRoute = async ({ request }) => {
 		total: links.length,
 		fetched: feedResults.length,
 		success: successfulSites.length,
-		sites: feedResults
+		sites: feedResults,
+		timestamp: Date.now() // 添加时间戳，帮助前端判断是否为新数据
 	}), {
 		headers: {
 			"Content-Type": "application/json",
-			"Cache-Control": "public, max-age=600" // 允许浏览器缓存10分钟
+			"Cache-Control": "no-cache, no-store, must-revalidate" // 禁用所有缓存
 		}
 	});
 };

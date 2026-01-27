@@ -71,8 +71,8 @@ async function fetchFriendCircle() {
 		loading = true;
 		error = null;
 		
-		// 添加缓存控制头，允许浏览器使用缓存
-		const response = await fetch("/api/friend-circle", {
+		// 添加缓存控制头，强制重新验证缓存
+		const response = await fetch(`/api/friend-circle?locale=${locale}`, {
 			headers: {
 				"Cache-Control": "no-cache" // 强制重新验证缓存
 			}
@@ -153,10 +153,10 @@ onMount(() => {
 		loadVisitedLinks();
 		fetchFriendCircle();
 		
-		// 设置定时自动刷新，每6小时刷新一次
+		// 设置定时自动刷新，每1小时刷新一次
 		const intervalId = setInterval(() => {
 			fetchFriendCircle();
-		}, 6 * 60 * 60 * 1000);
+		}, 1 * 60 * 60 * 1000);
 		
 		// 组件销毁时清除定时器
 		return () => clearInterval(intervalId);
