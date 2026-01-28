@@ -7,7 +7,15 @@ import { defineCollection, z } from "astro:content";
  */
 const note = defineCollection({
 	// Load all markdown files except those starting with underscore (private/draft files)
-	loader: glob({ pattern: ["**/*.md", "!**/_*.md", "!**/_*/*.md"], base: "./src/content/note" }), 
+	loader: glob({ 
+		pattern: ["**/*.md", "!**/_*.md", "!**/_*/*.md"], 
+		base: "./src/content/note",
+		// Custom ID generator to ensure unique IDs
+		generateId: ({ entry }) => {
+			// Remove file extension and use the path as ID
+			return entry.replace(/\.md$/, '');
+		}
+	}), 
 	schema: z.object({
 		title: z.string(), // Post title (required)
 		timestamp: z.date(), // Publication date (required)
