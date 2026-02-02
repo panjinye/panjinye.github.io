@@ -17,7 +17,8 @@ const t = i18nit(locale);
 // 服务器端预加载友圈数据
 let preloadedData = null;
 try {
-	const response = await fetch(`${Astro.site}${locale !== config.i18n.defaultLocale ? `/${locale}` : ""}/api/friend-circle?locale=${locale}`, {
+	const apiUrl = new URL(`/api/friend-circle?locale=${locale}`, Astro.request.url);
+	const response = await fetch(apiUrl.toString(), {
 		headers: {
 			"Cache-Control": "max-age=1800"
 		}

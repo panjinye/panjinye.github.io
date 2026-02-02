@@ -1,12 +1,12 @@
 import siteConfig from "./src/utils/config";
 
 const config = siteConfig({
-	title: "Ficor",
+	title: "Ficor's Path of Law",
 	prologue: "一个重新站起来，准备出发的人\nDo one Thing at a Time, and Do Well.",
 	author: {
 		name: "Ficor",
 		email: "ficor@qq.com",
-		link: "https://vii.ink"
+		link: "https://lawpan.cc"
 	},
 	social: [
 		{

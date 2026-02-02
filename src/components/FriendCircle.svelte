@@ -56,8 +56,6 @@ const allItems = $derived(
 	})()
 );
 
-// 缓存键
-const CACHE_KEY = `friendCircleCache_${locale}`;
 // 缓存有效期：5分钟
 const CACHE_DURATION = 5 * 60 * 1000;
 
@@ -85,7 +83,8 @@ function saveVisitedLinks() {
 // 从localStorage加载缓存数据
 function loadCachedData(): boolean {
 	try {
-		const saved = localStorage.getItem(CACHE_KEY);
+		const CacheKey = `friendCircleCache_${locale}`;
+		const saved = localStorage.getItem(CacheKey);
 		if (saved) {
 			const cached: CachedData = JSON.parse(saved);
 			const now = Date.now();
@@ -106,11 +105,12 @@ function loadCachedData(): boolean {
 // 保存数据到localStorage
 function saveCachedData() {
 	try {
+		const CacheKey = `friendCircleCache_${locale}`;
 		const data: CachedData = {
 			sites,
 			timestamp: Date.now()
 		};
-		localStorage.setItem(CACHE_KEY, JSON.stringify(data));
+		localStorage.setItem(CacheKey, JSON.stringify(data));
 	} catch (err) {
 		console.error("Failed to save cached data:", err);
 	}
@@ -498,9 +498,7 @@ onMount(() => {
 		cursor: not-allowed;
 	}
 
-	.spinning {
-		animation: spin 1s linear infinite;
-	}
+
 
 	.feed-sites {
 		display: grid;
