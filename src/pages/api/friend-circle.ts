@@ -24,11 +24,11 @@ export const GET: APIRoute = async ({ request }) => {
 	let links: FriendLink[] = [];
 	try {
 		const linksModule = await import(`../../content/information/${locale}/linkroll.mdx`);
-		links = linksModule.links || [];
+		links = (linksModule as any).links || [];
 	} catch {
 		// 加载默认语言
 		const linksModule = await import(`../../content/information/zh-cn/linkroll.mdx`);
-		links = linksModule.links || [];
+		links = (linksModule as any).links || [];
 	}
 
 	// 限制并发请求数量，避免过多请求导致的性能问题
@@ -74,11 +74,10 @@ export const GET: APIRoute = async ({ request }) => {
 						const response = await fetch(feedUrl, {
 							headers: {
 								"User-Agent": "Mozilla/5.0 (compatible; FriendCircle/1.0)",
-								"Cache-Control": "max-age=600" // 允许中间缓存10分钟
+								"Cache-Control": "max-age=600", // 允许中间缓存10分钟
+								Accept: "text/xml, application/xml, application/rss+xml, application/atom+xml" // 只接受文本响应，减少数据传输
 							},
-							signal: controller.signal,
-							// 只接受文本响应，减少数据传输
-							accept: "text/xml, application/xml, application/rss+xml, application/atom+xml"
+							signal: controller.signal
 						});
 
 						clearTimeout(timeoutId);
